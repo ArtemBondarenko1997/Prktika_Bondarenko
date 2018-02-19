@@ -1,0 +1,134 @@
+ <!doctype html> 
+<html lang="ru"> 
+<head> 
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<title>PlayList.com</title> 
+</head> 
+<body> 
+<header id="header" class="header"> 
+<div class="conteiner"> 
+<div class="row"> 
+<div class="coll-lg-3"> 
+<img src="img/logo.jpg" alt="PlayList.com" id="logo"> 
+<span>Убери кубики!</span>
+</div> 
+</div>
+</div>
+</header> 
+<section class="menu">
+<div class="conteiner">
+	<div class="row">
+	<div class="coll-lg-3">
+	<div class="menu__buttons">
+	<button class="menu__buttons__start" type="button">Старт</button>
+	<button class="menu__buttons__rules" type="button">Правила</button>
+	<button class="menu__buttons__newGame" type="button">Новая игра</button>
+	</div>
+	</div>
+	<div class="coll-lg-3 ml-auto">
+	<div menu__gameData>
+	<h5 class="menu__gameData__title">Очки</h5>
+	<span id="points"></span>
+	</div>
+	</div>
+	<div class="coll-lg-3 ml-auto">
+	<div menu__gameData>
+	<h1 class="menu__gameData__title">Время</h1>
+	<p id="countdown">Осталось секунд: <span></span></p>
+	</div>
+	</div>
+	</div>
+</div>
+</section>
+<section class="main">
+	<div class="conteiner">
+		<div class="row">
+			<div class="coll-lg-8">
+				<div id="main__playZon"></div>
+			</div>
+			<div class="coll-lg-1">
+			<div class="main__table">
+			<table border="1" width="50px" >
+			<caption>Results table</caption>
+            <tbody id="tbl">
+  			<tr>
+    				<th>Name</th>
+    				<th>Result</th>
+ 			 </tr>
+            </tbody>
+</table>
+			</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+ <div class="container">
+  <div class="row mt-3">
+   <div class="col-12">
+    <div class="modal fade" id="firstModal">
+    <div class="modal-dialog">
+     <div class="modal-content">
+     <div class="modal-header">
+     <h5 class="modal-title">Modal window name</h5>
+     <button class="close" data-dismiss="modal">?</button>
+     </div>
+     <div class="modal-body">
+    <p > Ваш результат: <span class="rez"></span></p>
+     <p>Введите ваше имя:</p>
+	<input type='text' id="txt">
+     </div>
+     <div class="modal-footer">
+     <button class="btn btn-primary" data-dismiss="modal">Закрыть</button>
+     </div>
+     </div>
+    </div>
+    </div>
+   </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-3">
+   <div class="col-12">
+    <div class="modal fade" id="secondModal">
+    <div class="modal-dialog">
+     <div class="modal-content">
+     <div class="modal-header">
+     <h5 class="modal-title">Правила</h5>
+     <button class="close" data-dismiss="modal">?</button>
+     </div>
+     <div class="modal-body">
+     <p>Есть поле, на котором расположены в случайном порядке “кубики” - разноцветные блоки. Кубики убираются с поля наведением курсора на кубик и последующим кликом левой кнопкой мышки. Даётся время - 1 минута. По мере убирания с поля кубиков, на поле появляются новые кубики (случайное количество от 0, 1 или 2). Уборка каждого кубика приносит 1 очко игроку (за красные 2, а синие приносят дополнительную секунду). Цель игры - за 1 минуту набрать наибольшее количество очков.</p>
+     </div>
+     <div class="modal-footer">
+     <button class="btn btn-primary" data-dismiss="modal">Close</button>
+     </div>
+     </div>
+    </div>
+    </div>
+   </div>
+  </div>
+</div>
+
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+
+    <script src="js/Script.js"></script>

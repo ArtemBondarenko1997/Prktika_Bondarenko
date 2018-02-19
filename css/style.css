@@ -1,0 +1,86 @@
+body{
+padding: 0px 150px;
+background: white;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+background-image: url("../img/Fon.png");
+-moz-background-size: 100%; /* Firefox 3.6+ */
+-webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+-o-background-size: 100%; /* Opera 9.6+ */
+background-size: 100%; /* Современные браузеры */ 
+}
+
+ul li{
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+h1{
+	text-align: center;
+}
+
+.header{
+	background: black;
+	color: white;
+	border-radius: 40px 40px 0px 0px;
+}
+
+#logo{
+	margin-left: 50px;
+	width: 120px;
+	height: 90px;
+}
+
+.menu{
+	padding: 10px 50px;
+	background: orange;
+}
+
+.menu button{
+	border: 2px solid black;  
+	background: orange;
+	border-radius: 10px;
+}
+
+.menu__gameData__title{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+}
+
+.menu__gameData__out{
+	border-radius: 10px;
+	border: 1px solid grey;  
+
+}
+
+.main{
+	padding: 10px 50px;
+	background: orange;
+	border-radius: 0px 0px 40px 40px;
+}
+
+#main__playZon{
+	margin: 25px 0px;
+	width: 800px;
+	height: 400px;
+	background: white;
+	padding: 0px 100px;
+}
+
+.main__table{
+	padding: 10px 40px;
+ 	font-size: 14px;
+  	border-collapse: collapse;
+  	text-align: left;
+}
+
+.activ{
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+.block{
+	width: 50px;
+	height: 50px;
+}
